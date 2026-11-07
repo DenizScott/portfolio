@@ -454,9 +454,68 @@ export const projects: Project[] = [
 
   /* ------------------------------------------------------------------ */
   {
+    id: 'pagehut',
+    slug: 'pagehut',
+    featuredOrder: 4,
+    emphasis: 'standard',
+    accent: 'blue',
+    title: 'PageHut',
+    category: { en: 'Writing & Planning Workspace', tr: 'Yazma ve Planlama Çalışma Alanı' },
+    summary: {
+      en: 'A free, open-source workspace for writing, planning and game design, with pages, databases, templates and optional GitHub sync.',
+      tr: 'Yazma, planlama ve oyun tasarımı için; sayfalar, veritabanları, şablonlar ve isteğe bağlı GitHub eşitlemesi sunan ücretsiz, açık kaynaklı çalışma alanı.',
+    },
+    technologies: ['Next.js', 'TypeScript', 'Electron'],
+    approach: ['Local-first', 'Open source'],
+    status: 'independent',
+    cover: { kind: 'placeholder' },
+    gallery: [],
+    video: null,
+    links: {
+      live: 'https://pagehut.vercel.app',
+      github: 'https://github.com/DenizScott/pagehut',
+    },
+    detail: {
+      en: {
+        tagline: 'A local-first workspace for writing, planning and game design.',
+        overview: [
+          'PageHut is a free, open-source workspace for writing, planning and game design. It includes pages, databases and templates for creators, everyday work and game teams.',
+          'It works offline in the browser and can optionally store collaborative workspaces in a GitHub repository you own.',
+        ],
+        features: [
+          { title: 'Pages, databases and templates', body: 'A block editor, nested pages and templates for writing, planning and game-design work.' },
+          { title: 'Local-first use', body: 'Local workspaces can be used offline without an account.' },
+          { title: 'Optional GitHub sync', body: 'Teams can keep workspaces in a repository as readable files.' },
+        ],
+        outcome: [
+          'Available as a web app and desktop application. Project visuals will be added when product captures are prepared for the portfolio.',
+        ],
+        mediaNote: 'No product capture is shown here yet; the project links open the live app and source code.',
+      },
+      tr: {
+        tagline: 'Yazma, planlama ve oyun tasarımı için önce yerel çalışan bir çalışma alanı.',
+        overview: [
+          'PageHut; yazma, planlama ve oyun tasarımı için ücretsiz, açık kaynaklı bir çalışma alanıdır. İçerik üreticileri, günlük işler ve oyun ekipleri için sayfalar, veritabanları ve şablonlar içerir.',
+          'Tarayıcıda çevrimdışı çalışır; ekip çalışma alanları isteğe bağlı olarak size ait bir GitHub deposunda saklanabilir.',
+        ],
+        features: [
+          { title: 'Sayfalar, veritabanları ve şablonlar', body: 'Blok düzenleyici, iç içe sayfalar ve yazma, planlama ile oyun tasarımı için şablonlar.' },
+          { title: 'Önce yerel kullanım', body: 'Yerel çalışma alanları hesap gerektirmeden çevrimdışı kullanılabilir.' },
+          { title: 'İsteğe bağlı GitHub eşitlemesi', body: 'Ekipler çalışma alanlarını okunabilir dosyalar olarak bir depoda tutabilir.' },
+        ],
+        outcome: [
+          'Web uygulaması ve masaüstü uygulaması olarak kullanılabilir. Portfolyo için ürün ekran görüntüleri hazırlandığında bu sayfaya eklenecek.',
+        ],
+        mediaNote: 'Henüz ürün ekran görüntüsü eklenmedi; proje bağlantıları canlı uygulamayı ve kaynak kodu açar.',
+      },
+    },
+  },
+
+  /* ------------------------------------------------------------------ */
+  {
     id: 'cyber-rebirth',
     slug: 'cyber-rebirth',
-    featuredOrder: 4,
+    featuredOrder: 5,
     emphasis: 'standard',
     accent: 'magenta',
     title: 'Cyber Rebirth',
