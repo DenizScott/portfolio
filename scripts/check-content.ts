@@ -22,15 +22,15 @@ console.log('🔍 Running automated content and integrity audit...');
 
 // 1. Verify project count and exact order
 const ordered = getProjectsOrdered();
-assert(ordered.length === 4, `Expected exactly 4 projects, found ${ordered.length}`);
-const expectedSlugs = ['underwake', 'omni', 'ludenos', 'cyber-rebirth'];
+assert(ordered.length === 5, `Expected exactly 5 projects, found ${ordered.length}`);
+const expectedSlugs = ['underwake', 'omni', 'ludenos', 'pagehut', 'cyber-rebirth'];
 ordered.forEach((p, idx) => {
   assert(
     p.slug === expectedSlugs[idx],
     `Project #${idx + 1} must be "${expectedSlugs[idx]}", found "${p.slug}" (featuredOrder: ${p.featuredOrder})`,
   );
 });
-console.log('  ✓ Project order verified: Underwake (1) → Omni (2) → LudenOS (3) → Cyber Rebirth (4)');
+console.log('  ✓ Project order verified: Underwake (1) → Omni (2) → LudenOS (3) → PageHut (4) → Cyber Rebirth (5)');
 
 // 2. Verify all referenced media items exist on disk
 function verifyMediaId(mediaId: string, context: string) {
